@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>linkDb</class>
+ <widget class="QDialog" name="linkDb">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>583</width>
+    <height>428</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="nameDB">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>41</y>
+     <width>105</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Name database</string>
+   </property>
+   <property name="buddy">
+    <cstring>set_db_name</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="host">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>104</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Name Host</string>
+   </property>
+   <property name="buddy">
+    <cstring>set_host_name</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="login">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>167</y>
+     <width>37</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Login</string>
+   </property>
+   <property name="buddy">
+    <cstring>set_login</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="password">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>230</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Password</string>
+   </property>
+   <property name="buddy">
+    <cstring>set_pass</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="port">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>293</y>
+     <width>26</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Port</string>
+   </property>
+   <property name="buddy">
+    <cstring>set_port</cstring>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="set_db_name">
+   <property name="geometry">
+    <rect>
+     <x>123</x>
+     <y>41</y>
+     <width>421</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="set_host_name">
+   <property name="geometry">
+    <rect>
+     <x>123</x>
+     <y>104</y>
+     <width>421</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="set_login">
+   <property name="geometry">
+    <rect>
+     <x>123</x>
+     <y>167</y>
+     <width>421</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="set_pass">
+   <property name="geometry">
+    <rect>
+     <x>123</x>
+     <y>230</y>
+     <width>421</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="set_port">
+   <property name="geometry">
+    <rect>
+     <x>123</x>
+     <y>293</y>
+     <width>421</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Button_Ok">
+   <property name="geometry">
+    <rect>
+     <x>379</x>
+     <y>356</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Button_cancel">
+   <property name="geometry">
+    <rect>
+     <x>479</x>
+     <y>356</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Button_Ok</sender>
+   <signal>clicked()</signal>
+   <receiver>linkDb</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>425</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>291</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Button_cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>linkDb</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>525</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>291</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
